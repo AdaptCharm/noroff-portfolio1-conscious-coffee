@@ -32,16 +32,14 @@
   flex-direction: column;
 }
 
+.aside img {
+  border-radius: var(--radius-small);
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (min-width: 769px) {
   .aside {
     flex-direction: row;
-  }
-
-  .aside h2 {
-    margin-right: 14rem;
-  }
-
-  .aside img {
-    border-radius: var(--radius-small);
   }
 }
