@@ -1,4 +1,5 @@
 import { FC, useState } from 'react'
+import { Router } from 'next/router'
 import Link from 'next/link'
 import { Logo } from '@components/ui'
 import ArrowLeft from '@components/icons/ArrowLeft'
@@ -8,7 +9,7 @@ import n from './Navbar.module.css'
 const Navbar: FC = () => {
   const [mobileNavShown, setMobileNavShown] = useState(false)
 
-  const toggle = () => setMobileNavShown(!mobileNavShown)
+  Router.events.on('routeChangeStart', () => { setMobileNavShown(false) })
 
   return (
     <div className={n.navbar}>
@@ -17,7 +18,7 @@ const Navbar: FC = () => {
           <Logo size={8} />
         </a>
       </Link>
-      <span className={n.toggle} onClick={toggle}>
+      <span className={n.toggle} onClick={() => setMobileNavShown(!mobileNavShown)}>
         {mobileNavShown == true ? (
           <ArrowLeft />
         ) : (
