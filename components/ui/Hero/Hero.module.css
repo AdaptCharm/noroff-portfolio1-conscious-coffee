@@ -1,0 +1,37 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 30vh;
+  background: url(/hero.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title, .button {
+}
+
+.title {
+  padding: 20px;
+  color: var(--background);
+  background-color: hsla(0, 0%, 0%, .6);
+  border-radius: var(--radius-small);
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Think Different, Think Organic | Conscious Coffee",
+  "titleTemplate": "%s | Conscious Coffee",
+  "description": "The best organic coffee in the city. Only at Conscious Coffee!",
+  "openGraph": {
+    "type": "website",
+    "locale": "en",
+    "url": "https://conscious-coffee.vercel.app",
+    "site_name": "Think Different, Think Organic | Conscious Coffee"
+  },
+  "twitter": {
+    "handle": "@nextjs",
+    "site": "@nextjs",
+    "cardType": "summary_large_image"
+  }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;600&family=Rubik:wght@300;400;600&display=swap');
+
+
+:root {
+  --background: hsl(40, 20%, 97%);
+  --foreground: hsl(0, 0%, 13%);
+
+  --radius-smallest: 0.375rem;
+  --radius-small: 0.75rem;
+  --radius-medium: 1.5rem;
+  --radius-large: 150597px;
+
+  --shadow-smallest: 0px 4px 8px hsla(0, 0%, 0%, 0.12);
+  --shadow-small: 0 5px 10px hsla(0, 0%, 0%, 0.12);
+  --shadow-medium: 0 8px 30px hsla(0, 0%, 0%, 0.12);
+  --shadow-large: 0 30px 60px hsla(0, 0%, 0%, 0.12);
+
+  --font-primary: 'Fredoka One', BlinkMacSystemFont, -apple-system, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-secondary: Nunito, Rubik, BlinkMacSystemFont, -apple-system, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: #fef7c6;
+}
+
+html,
+body {
+  font: 400 16px/1.5 var(--font-secondary);
+  background-color: var(--background);
+  color: var(--foreground);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline var(--background);
+}
+
+.debug {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+
+/* Box shadow */
+.shadow-smallest {
+    box-shadow: var(--shadow-smallest);
+}
+
+.shadow-small {
+    box-shadow: var(--shadow-small);
+}
+
+.shadow-medium {
+    box-shadow: var(--shadow-medium);
+}
+
+.shadow-large {
+    box-shadow: var(--shadow-large);
+}
+
+
+/* Border radius */
+.rounded-smallest {
+  border-radius: var(--radius-smallest);
+}
+
+.rounded-small {
+  border-radius: var(--radius-small);
+}
+
+.rounded-medium {
+  border-radius: var(--radius-medium);
+}
+
+.rounded-large {
+  border-radius: var(--radius-large);
+}
+
+
+/* Button */
+.button {
+  font-family: var(--font-primary);
+  border-radius: var(--radius-small);
+  padding: 12px 24px;
+  background-color: #F4E6D5;
+}
+
+.button:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Section */
+.section {
+  padding: 25vh 3.75rem;
+  font-family: var(--font-secondary);
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 960px;
+}

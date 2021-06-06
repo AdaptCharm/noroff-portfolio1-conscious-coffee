@@ -1,0 +1,7 @@
+export { default as Logo } from './Logo'
+export { default as Link } from './Link'
+export { default as Hero } from './Hero'
+export { default as Story } from './Story'
+export { default as Contact } from './Contact'
+export { default as Locations } from './Locations'
+export { default as About } from './About'
